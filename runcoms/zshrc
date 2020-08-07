@@ -11,7 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-cd ~/GitRepos/JSS_Scripts
+cd ~/GitRepos/git2jss
 
 export EDITOR="/usr/local/bin/mate -w"
 
@@ -19,6 +19,12 @@ alias scripts="cd ~/GitRepos/JSS_Scripts"
 alias eas="cd ~/GitRepos/JSS_EAs"
 alias configs="cd ~/GitRepos/configProfiles"
 alias ckh="rm -rf ~/.ssh/known_hosts"
+alias git2jss="source ~/.virtualenv/git2jss/bin/activate"
+alias syncprod="python sync.py --url https://casper.coxautoinc.com:8443 --username ddcdennisb-sa"
+alias syncdev="python sync.py --url https://devcoxautoinc.jamfcloud.com --username ddcdennisb-sa"
+
+
+
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
