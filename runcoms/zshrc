@@ -23,7 +23,7 @@ alias jss="cd ~/GitRepos/git2jss"
 alias git2jss="source ~/.virtualenv/git2jss/bin/activate"
 alias syncprod="python sync.py --url https://casper.coxautoinc.com:8443 --username ddcdennisb-sa"
 alias syncdev="python sync.py --url https://devcoxautoinc.jamfcloud.com --username ddcdennisb-sa"
-
+alias syncboth="python sync.py --url https://casper.coxautoinc.com:8443 --username ddcdennisb-sa && python sync.py --url https://devcoxautoinc.jamfcloud.com --username ddcdennisb-sa"
 
 
 
